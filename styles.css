@@ -1,0 +1,419 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+.header, .navbar, .container, .contact-form form .input-box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.intro_page, .about, .contact-form {
+    min-width: auto;
+}
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 5%;
+    }
+    .navbar {
+        gap: 10px;
+    }
+    .intro_page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+    .home-content {
+        margin-left: 0;
+        text-align: center;
+    }
+    .home-content h1 {
+        font-size: 60px;
+        margin-left: 0;
+    }
+    .home-content p {
+        font-size: 28px;
+    }
+    .btn-box {
+        justify-content: center;
+    }
+    .image img {
+        max-width: 80%;
+    }
+    .about {
+        padding: 5em;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .project {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        justify-content: space-around;
+        height: 150px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    .header .social {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    .header .social a {
+        font-size: 10px; /* Smaller icons on mobile */
+    }
+    .header .logo {
+        text-align: center;
+        width: 100%;
+    }
+    .contact {
+        margin: 10px auto;
+    }
+    .image img {
+        width: 100%; 
+        max-width: 100px;
+        border-radius:85%; 
+        border:5px solid #27005D;
+    }
+    .home-content h1 {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .about-h1 {
+        font-size: 40px;
+    }
+    .about-content p {
+        font-size: 18px;
+    }
+    .container img {
+        width: 150px;
+        height: 150px;
+    }
+    .contact-form h2 {
+        font-size: 40px;
+    }
+    .footer ul li {
+        padding: 5px;
+    }
+    .footer .copyright {
+        font-size: 12px;
+    }
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    padding: 35px 12%;
+    background-color: #27005D;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.navbar a{
+    font-size: 18px;
+    color:burlywood;
+    font-weight: 400;
+    margin:0 10px;
+    border-bottom: 2px solid transparent;
+}
+.header .social{
+    display: flex;
+    gap:15px;/*space between the social icons*/
+    align-items: center;
+    margin-left: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left:50px;   
+}
+.header .social a {
+    font-size: 24px;
+    color: white;
+}
+.header .logo{
+    margin-right: auto;
+}
+.logo{
+    color:burlywood;
+    font-weight:bold;
+}
+.logo:hover{
+    color:rgb(255, 255, 255);
+}
+.name{
+    font-size: 25px;
+    font-family: Rubik Doodle Shadow;
+}
+.navbar a{
+    font-size:18px;
+    color:burlywood;
+    font-weight: 400px;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+}
+.aboutup:hover,.resume:hover,.educa:hover{
+    color:white;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: #E68369;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.contact:hover{
+    background-color: white;
+    box-shadow: 0 0 20px white;
+    color:black;
+}
+.intro_page{
+    width: 100%;
+    min-height: 100vh;
+    background:rgba(244, 219, 128, 0.786);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 50px;
+}
+.image img {
+    width: 100%; /* Makes sure image is responsive */
+    max-width: 400px; /* Adjust size as needed */
+    border-radius:85%; /* Optional: Adds rounded corners */
+    border:10px solid #27005D;
+    overflow: hidden;
+}
+
+.home-content .intro-name{
+    font-family: Dancing Script;
+    font-weight: 700 bold;
+}
+.home-content .para{
+    font-weight: 800;
+}
+.para .btech{
+    font-weight: bolder;
+    font-family:Dancing Script;
+    font-size: 25px;
+}
+.home-content{
+    max-width:800px;
+    margin-left: 80px;
+}
+
+.home-content h1{
+    font-size: 95px;
+    line-height:normal;
+    font-family: Dancing Script;    
+    display: block;
+    margin-left: 300px;
+}
+
+.home-content p{
+    font-size: 78px;
+    margin:25px 0 30px;
+    font-family: Dancing Script;
+    padding-top: 35px;
+}
+.home-content .intro-name:hover{
+    color:#27005D;
+    font-family: Dancing Script;    
+    text-shadow: 2px 2px 5px white;
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+.btn-1{
+    padding: 15px 20px;
+    background-color: black;
+    color:white;
+    border:2px solif transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor:pointer;    
+}
+.btn-1:hover{
+    background-color: white;
+    color:#27005D;
+    border: 2px solid black;
+}
+.btn-2{
+    padding: 15px 28px ;
+    background-color: rgb(3, 3, 3);
+    color:white;
+    border: 2px solid black;
+    border-radius:8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color:#27005D;
+}
+.about{
+    background-color: rgba(244, 173, 200, 0.786);
+    display: flex;
+    align-items: center;
+    padding: 10em;
+    padding-top:5em;
+    gap:5em;
+}
+.about-h1{
+    font-size:60px;
+    font-weight: bold;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    max-width: max-content;
+}
+.about-content{
+    font-size: large;
+    max-width: 700;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-content p{
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.about-content ol{
+    display: flex;
+}
+.container img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.container h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contact-form {
+    background: url('https://raw.githubusercontent.com/janakir2006/Images-project/refs/heads/main/bgimg.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll; /* Keeps it fixed while scrolling */
+    min-height: 100vh; /* Ensures it takes the full section height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* Adds some spacing */
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 75px;
+    font-family: Dancing Script;
+    color:burlywood;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color:black;
+    background: rgb(241, 241, 241);
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.footer{
+    position: relative;
+    bottom:0;
+    width:100%;
+    padding:40px 0;
+    background-color: #ECCEAE;
+}
+.footer ul{
+    margin-top:0;
+    padding:0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom:0;
+    text-align: center;
+}
+.footer ul li a{
+    color:#131842;
+    border-bottom: 3px solid black;
+}
+.footer ul li{
+    display: inline-block;
+    padding:0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font: size 12px;
+    color:#131842;
+}
+
+
+
+
+
